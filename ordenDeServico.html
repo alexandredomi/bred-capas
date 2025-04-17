@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandre RCM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="center">
+            <div class="logo">
+                <div class="img">
+                    <img src="logo_64_473977111.png" width="40px" alt="logo"></div>
+                <div>
+                    <h2><span>Bred</span>Capas</h2>
+                    <p>tudo para o seu celular</p>
+                </div>
+            </div>
+            
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                    <a href="cadastroDeClientes.html">Cadastro de Clientes</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <h1>Orden de Serviço</h1>
+    <!--dados do aparelho-->
+    <form>
+
+        <h2>Dados do aparelho</h2>
+        
+        <table>
+            <tr>
+                <th>Dados</th>
+                <th>Observações</th>
+            </tr>
+
+            <tr>
+                <td>Modelo</td>
+                <td><input type="text" class="observacoes" placeholder="Samsung, Apple, Xiaomi..."></td>
+            </tr>
+
+            <tr>
+                <td>Modelo </td>
+                <td><input type="text" class="observacoes" placeholder="Galaxy A12, iPhone 11"></td>
+            </tr>
+
+            <tr>
+                <td>Cor do aparelho</td>
+                <td><input type="text" class="observacoes" placeholder="Vermelho, Preto..."></td>
+            </tr>
+
+            <tr>
+                <td>Número de série ou IMEI</td>
+                <td><input type="text" class="observacoes" placeholder="IMEI..."></td>
+            </tr>
+
+            <tr>
+                <td>Defeito Relatado</td>
+                <td><input type="text" class="observacoes" placeholder="Molhou, Caiu..."></td>
+            </tr>
+        </table>
+    </form>
+    <!--form estado do aparelho-->
+    <form>
+        <h2>Estado do Aparelho</h2>
+        <table>
+        <tr>
+            <th>Item</th>
+            <th>Situação</th>
+            <th>Observações</th>
+        </tr>
+
+        <tr>
+            <td>Tela</td>
+            <td class="checkbox-group">
+            <label><input type="checkbox"> Boa</label>
+            <label><input type="checkbox"> Trincada</label>
+            <label><input type="checkbox"> Riscada</label>
+            </td>
+            <td><input type="text" class="observacoes" placeholder="Outros..." placeholder="Outros..."></td>
+        </tr>
+
+        <tr>
+            <td>Touch</td>
+            <td class="checkbox-group">
+            <label><input type="checkbox"> Funciona</label>
+            <label><input type="checkbox"> Parcial</label>
+            <label><input type="checkbox"> Não funciona</label>
+            </td>
+            <td><input type="text" class="observacoes" placeholder="Outros..." ></td>
+        </tr>
+
+        <tr>
+            <td>Microfone</td>
+            <td class="checkbox-group">
+            <label><input type="checkbox"> Funciona</label>
+            <label><input type="checkbox"> Parcial</label>
+            <label><input type="checkbox"> Não funciona</label>
+            </td>
+            <td><input type="text" class="observacoes" placeholder="Outros..." ></td>
+        </tr>
+
+        <tr>
+            <td>Alto falante</td>
+            <td class="checkbox-group">
+            <label><input type="checkbox"> Funciona</label>
+            <label><input type="checkbox"> Parcial</label>
+            <label><input type="checkbox"> Não funciona</label>
+            </td>
+            <td><input type="text" class="observacoes" placeholder="Outros..." ></td>
+        </tr>
+
+        <tr>
+            <td>Câmera</td>
+            <td class="checkbox-group">
+            <label><input type="checkbox"> Ok</label>
+            <label><input type="checkbox"> Embaçada</label>
+            <label><input type="checkbox"> Não funciona</label>
+            </td>
+            <td><input type="text" class="observacoes" placeholder="Outros..." ></td>
+        </tr>
+
+        <tr>
+            <td>Bateria</td>
+            <td class="checkbox-group">
+            <label><input type="checkbox"> Boa</label>
+            <label><input type="checkbox"> Inchada</label>
+            <label><input type="checkbox"> Descarrega rápido</label>
+            </td>
+            <td><input type="text" class="observacoes" placeholder="Outros..." ></td>
+        </tr>
+
+        <tr>
+            <td>Carregamento</td>
+            <td class="checkbox-group">
+            <label><input type="checkbox"> Normal</label>
+            <label><input type="checkbox"> Intermitente</label>
+            <label><input type="checkbox"> Não carrega</label>
+            </td>
+            <td><input type="text" class="observacoes" placeholder="Outros..." ></td>
+        </tr>
+        
+        
+        <!-- Adicione outros itens aqui se quiser -->
+        </table>
+    </form>
+    <!--form acessorios entregues-->
+    <form>
+        <h2>Acessórios Entregues</h2>
+
+        <table>
+        <tr>
+            <th>Acessório</th>
+            <th>Entregue</th>
+            <th>Observações</th>
+        </tr>
+
+        <tr>
+            <td>Chip e cartao SD</td>
+            <td><input type="checkbox"> Sim</td>
+            <td><input type="text" class="observacoes" placeholder="Operadora..."></td>
+        </tr>
+
+        <tr>
+            <td>Capinha</td>
+            <td><input type="checkbox"> Sim</td>
+            <td><input type="text" class="observacoes" placeholder="Modelo/Cor..."></td>
+        </tr>
+        </table>
+
+        <br><br>
+
+        <h3>Resulrado Checklist</h3>
+        
+        <textarea name="" id=""></textarea>
+        <br>
+        <br>
+        <button>Copiar</button>
+        <button>Enviar via Whatsapp</button>
+        <br>
+    </form>
+    </main> 
+    <footer>
+        <p>© 2025 Todos os direitos reservados. | Dev Alexandre</p>
+    </footer>
+</body>
+</html>

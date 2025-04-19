@@ -39,31 +39,31 @@
         </tr>
         <tr>
             <td>Nome completo</td>
-            <td><input type="text" class="observacoes" placeholder="Nome Completo..."></td>
+            <td><input type="text" class="observacoes" placeholder="Nome Completo..." required></td>
         </tr>
         <tr>
             <td>Telefone</td>
-            <td><input type="text" class="observacoes" placeholder="(99) 99999-9999..."></td>
+            <td><input type="text" class="observacoes" placeholder="(99) 99999-9999..." required></td>
         </tr>
         <tr>
             <td>CPF</td>
-            <td><input type="text" class="observacoes" placeholder="000-000-000/00..."></td>
+            <td><input type="text" class="observacoes" placeholder="000.000.000-00..." id="cpf" maxlength="14" oninput="formatarCPF(this)" required></td>
         </tr>
         <tr>
             <td>Data de Nascimento</td>
-            <td><input type="text" class="observacoes" placeholder="00000-000..."></td>
+            <td><input type="text" class="observacoes" placeholder="00000-000..." required></td>
         </tr>
         <tr>
             <td>CEP</td>
-            <td><input type="text" class="observacoes" placeholder="CEP..."></td>
+            <td><input type="text" class="observacoes" placeholder="CEP..." required></td>
         </tr>
         <tr>
             <td>Produto</td>
-            <td><input type="text" class="observacoes" placeholder="Produto..."></td>
+            <td><input type="text" class="observacoes" placeholder="Produto..." required></td>
         </tr>
         <tr>
             <td>Codigo do Vendedor</td>
-            <td><input type="text" class="observacoes" placeholder="Vendedor..."></td>
+            <td><input type="text" class="observacoes" placeholder="Vendedor..." required></td>
         </tr>
         </table>
         <br><br>
@@ -78,5 +78,6 @@
     <footer>
         <p>© 2025 Todos os direitos reservados. | Dev Alexandre</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

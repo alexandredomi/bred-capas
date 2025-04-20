@@ -111,11 +111,11 @@ formulario.addEventListener('submit', function(event) {
 const texto = document.getElementById('campoTexto').innerText;
 
 function enviarParaWhatsApp() {
-    const numeroTelefone = '5553984415919'; 
-    const mensagem = document.getElementById('campoTexto').innerText;
+    const numeroTelefone = '555399999999'; // Troca pelo teu número
+    const mensagem = document.getElementById('campoTexto').innerText; // ou .value se for textarea
     const mensagemCodificada = encodeURIComponent(mensagem);
-    const linkWhatsApp = `https://wa.me/${numeroTelefone}?text=${mensagemCodificada}`;
     
-    // Abre o WhatsApp
-    window.open(linkWhatsApp, '_blank');
+    const link = `https://wa.me/${numeroTelefone}?text=${mensagemCodificada}`;
+    
+    window.open(link, '_blank'); // abre em nova aba
     }

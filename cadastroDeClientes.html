@@ -30,7 +30,7 @@
     </header>
     <main>
         <h1>Cadastro do Cliente</h1>
-    <form>
+    <form  id="formulario">
         <h2>Adicionar novo</h2>
         <table>
         <tr>
@@ -39,39 +39,39 @@
         </tr>
         <tr>
             <td>Nome completo</td>
-            <td><input type="text" class="observacoes" placeholder="Nome Completo..." required></td>
+            <td><input type="text" id="nome" class="observacoes" required placeholder="Nome Completo..." ></td>
         </tr>
         <tr>
             <td>Telefone</td>
-            <td><input type="text" class="observacoes" placeholder="(99) 99999-9999..." required></td>
+            <td><input type="text" id="telefone" class="observacoes" required placeholder="(99) 99999-9999..." ></td>
         </tr>
         <tr>
             <td>CPF</td>
-            <td><input type="text" class="observacoes" placeholder="000.000.000-00..." id="cpf" maxlength="14" oninput="formatarCPF(this)" required></td>
+            <td><input type="text" class="observacoes" required placeholder="000.000.000-00..." id="cpf" maxlength="14" oninput="formatarCPF(this)" ></td>
         </tr>
         <tr>
             <td>Data de Nascimento</td>
-            <td><input type="text" class="observacoes" placeholder="00000-000..." required></td>
+            <td><input type="text" id="dataDeNascimento" class="observacoes" required placeholder="00/00/0000..." ></td>
         </tr>
         <tr>
             <td>CEP</td>
-            <td><input type="text" class="observacoes" placeholder="CEP..." required></td>
+            <td><input type="text" id="cep" class="observacoes" required placeholder="CEP..." ></td>
         </tr>
         <tr>
             <td>Produto</td>
-            <td><input type="text" class="observacoes" placeholder="Produto..." required></td>
+            <td><input type="text" id="produto" class="observacoes" required placeholder="Produto..." ></td>
         </tr>
         <tr>
             <td>Codigo do Vendedor</td>
-            <td><input type="text" class="observacoes" placeholder="Vendedor..." required></td>
+            <td><input type="text" id="numero" class="observacoes" required placeholder="Vendedor..." ></td>
         </tr>
         </table>
         <br><br>
-        <h3>Resultado Checklist</h3>
-        <textarea name="" id=""></textarea>
+        <h3>Resultado Checklist:</h3>
+        <div name="" id="campoTexto"></div>
         <br><br>
-        <button>Copiar</button>
-        <button>Enviar via Whatsapp</button>
+        <button onclick="moverTexto()">Gerar</button>
+        <button onclick="enviarParaWhatsApp()">Enviar via Whatsapp</button>
         <br>
     </form>
     </main> 

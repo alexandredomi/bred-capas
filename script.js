@@ -119,3 +119,25 @@ function enviarParaWhatsApp() {
     
     window.open(link, '_blank'); // abre em nova aba
     }
+
+
+function copiarTexto() {
+  // Seleciona a div
+  const div = document.getElementById('campoTexto');
+
+  // Cria um elemento de texto temporário
+  const tempInput = document.createElement('textarea');
+  tempInput.value = div.textContent;
+
+  // Adiciona ao body e seleciona o texto
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  tempInput.setSelectionRange(0, 99999); // Para dispositivos móveis
+
+  document.execCommand('copy');
+
+  document.body.removeChild(tempInput);
+
+  alert("Texto copiado!");
+
+}

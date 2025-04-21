@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alexandre RCM</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -21,8 +22,17 @@
             
             <ul>
                 <li>
-                    <a href="index.html">Home</a>
-                    <a href="ordenDeServico.html">Orden de Serviço</a> 
+                    <a href="cadastroDeClientes.html">
+                        <i class="fa-solid fa-person"></i>
+                        CADASTRO DE CLIENTES
+                    </a>
+                    <a href="ordenDeServico.html">
+                        <i class="fa-solid fa-check-to-slot"></i>
+                        ORDEN DE SERVIÇO
+                    </a>
+                    <a href="index.html">
+                        <i class="fa-solid fa-person-walking-dashed-line-arrow-right"></i>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -71,6 +81,7 @@
         <div name="" id="campoTexto"></div>
         <br><br>
         <button onclick="moverTexto()">Gerar</button>
+        <button onclick="copiarTexto()">Copiar</button>
         <button onclick="enviarParaWhatsApp()">Enviar via Whatsapp</button>
         <br>
     </form>

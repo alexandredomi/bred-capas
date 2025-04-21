@@ -51,27 +51,27 @@
 
             <tr>
                 <td>Marca</td>
-                <td><input type="text" class="observacoes" placeholder="Samsung, Apple, Xiaomi..." required></td>
+                <td><input type="text" class="observacoes" placeholder="Samsung, Apple, Xiaomi..." id="inputNome" required></td>
             </tr>
 
             <tr>
                 <td>Modelo </td>
-                <td><input type="text" class="observacoes" placeholder="Galaxy A12, iPhone 11"></td>
+                <td><input type="text" class="observacoes" placeholder="Galaxy A12, iPhone 11" id="inputModelo" required></td>
             </tr>
 
             <tr>
                 <td>Cor do aparelho</td>
-                <td><input type="text" class="observacoes" placeholder="Vermelho, Preto..."></td>
+                <td><input type="text" class="observacoes" placeholder="Vermelho, Preto..." id="inputCor" required></td>
             </tr>
 
             <tr>
                 <td>Número de série ou IMEI</td>
-                <td><input type="text" class="observacoes" placeholder="IMEI..."></td>
+                <td><input type="text" class="observacoes" placeholder="IMEI..." id="inputImei"></td>
             </tr>
 
             <tr>
                 <td>Defeito Relatado</td>
-                <td><input type="text" class="observacoes" placeholder="Molhou, Caiu..."></td>
+                <td><input type="text" class="observacoes" placeholder="Molhou, Caiu..." id="inputDefeito"></td>
             </tr>
         </table>
     </form>
@@ -187,16 +187,18 @@
 
         <h3>Resulrado Checklist</h3>
         
-        <textarea name="" id=""></textarea>
+        <div name="" id="campoTexto"></div>
         <br>
         <br>
-        <button>Copiar</button>
-        <button>Enviar via Whatsapp</button>
+        <button type="button" onclick="gerarResumo()">Gerar</button>
+        <button onclick="copiarTexto()">Copiar</button>
+        <button type="button" onclick="enviarParaWhatsApp()">Enviar via Whatsapp</button>
         <br>
     </form>
     </main> 
     <footer>
         <p>© 2025 Todos os direitos reservados. | Dev Alexandre</p>
     </footer>
+    <script src="scriptOs.js"></script>
 </body>
 </html>

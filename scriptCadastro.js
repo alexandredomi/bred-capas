@@ -111,7 +111,7 @@ formulario.addEventListener('submit', function(event) {
 const texto = document.getElementById('campoTexto').innerText;
 
 function enviarParaWhatsApp() {
-    const numeroTelefone = '555399999999'; // Troca pelo teu número
+    const numeroTelefone = '555333075545'; // Troca pelo teu número
     const mensagem = document.getElementById('campoTexto').innerText; // ou .value se for textarea
     const mensagemCodificada = encodeURIComponent(mensagem);
     

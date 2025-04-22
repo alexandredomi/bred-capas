@@ -30,7 +30,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 100px;
+    gap: 50px;
 }
 main .logo .img{
     display: flex;
@@ -60,7 +60,7 @@ main .links a{
     border: 1px solid var(--cor-branco);
     border-radius: 10px;
     width: 200px;
-    height: 200px;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,13 +73,13 @@ main .links a:hover{
 }
 main .links a div{
     width: 200px;
-    height: 200px;
+    height: 150px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 main .links a div i{
     font-size: 30px;
